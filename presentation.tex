@@ -24,8 +24,6 @@
 \date{\formatdate{21}{2}{2017}}
 
 \begin{document}
-\bibliographystyle{apalike}
-
 \begin{frame}[plain]
 	\tikz[remember picture,overlay]{
 		\path (current page.south west) node[anchor=south west, inner ysep=0] (lamsade) {
@@ -551,7 +549,7 @@
 	\frametitle{Indifference to permutation is sufficient for anonymity}
 	\begin{itemize}
 		\item Assume $\pglobeq$ is indifferent to permutations of $x$
-		\item E.g. \isolatedrankvector{1}{3} {\sim} \isolatedrankvector{3}{1}
+		\item E.g. \isolatedrankvector{1}{3} {$\sim$} \isolatedrankvector{3}{1}
 		\item It follows that $f_\pglobeq$ satisfies anonymity:
 		\item Permuting the voters permutes all rank-vectors
 		\item $f$ must still select the same (reordered) rank-vectors
@@ -683,8 +681,8 @@
 	\begin{itemize}
 		\item Bucklin is a WOB rule
 		\item Proof idea: let’s build a score $s(x)$ to be \emph{minimized}
-		\item $s(x) = $ rank $m_x$ required plus frac.\ missing for unanimity at $m_x$
-		\item Define $m_x$ as the “median” of $x$ {\tiny lowest nb $n$ st more than half the numbers are ≤ $n$}
+		\item $s(x) = $ rank $m_x$ required + frac.\ missing for unanimity at $m_x$
+		\item Define $m_x$ as the “median” of $x$ {\tiny lowest nb $n$ st more than ½ the numbers are ≤ $n$}
 	\end{itemize}
 	\begin{equation}
 		s(x) = m_x + \frac{\# x_i > m_x}{\# x_i}
