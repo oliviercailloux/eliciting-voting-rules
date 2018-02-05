@@ -21,6 +21,7 @@
 
 %REDAC
 \usepackage{booktabs}
+\usepackage{multirow}
 \usepackage{calc}
 \usepackage{tabularx}
 
@@ -31,7 +32,7 @@
 \usepackage{mathtools} %load this before babel!
 	\mathtoolsset{showonlyrefs,showmanualtags}
 
-\usepackage{natbib}%Package frenchb asks to load natbib before babel/frenchb
+\usepackage[round]{natbib}%Package frenchb asks to load natbib before babel/frenchb
 \usepackage{babel}%[french, english]: language options should be on the document level
 %suppresses the warning about frenchb not modifying the captions (“—” to “:” in “Figure 1 – Legend”).
 %	\frenchbsetup{AutoSpacePunctuation=false,SuppressWarning=true}% test with false?
@@ -67,7 +68,7 @@
 %linkcolor=black: this leaves other links in colors, e.g. refs in green, don't print well.
 %pdfborder (0 0 1, set to 0 0 0 if colorlinks): width of PDF link border
 %hidelinks or: colorlinks, linkcolor=black, citecolor=black, urlcolor={blue!80!black}
-\hypersetup{breaklinks, bookmarksopen}
+\hypersetup{breaklinks, bookmarksopen, citecolor=black}
 %add hyperfigures=true in hypersetup (already defined in article mode)
 \iftoggle{LCpres}{
 	\hypersetup{hyperfigures}
